@@ -9,5 +9,5 @@ function homePageLoad() {
 }
 
 function sortingHatLoad() {
-    $('#greeting').append("hello " + $.cookie('name'));
+    $('#greeting').append("hello " + $.cookie("name", {path:"index.html"}));
 }
