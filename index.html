@@ -1,6 +1,9 @@
 <html>
 <head>
     <title>Hogwarts castle</title>
+    <script src="https://code.jquery.com/jquery-3.1.0.js" integrity="sha256-slogkvB1K3VOkzAI8QITxV3VzpOnkeNVsKvtkYLMjfk=" crossorigin="anonymous"></script>
+    <script src="js/cookie.js"></script>
+    <script src="js/lib.js"></script>
     <style>
         .bg {
             position: relative;
@@ -42,11 +45,14 @@
         </tr>
         <tr>
             <td colspan="2">
-                <button type="submit"><img src="./images/wand.png"/></button>
+                <img id="submit" src="./images/wand.png"/>
             </td>
         </tr>
     </table>
 </form>
 
 </body>
+<script type="text/javascript">
+    $(document).ready(homePageLoad);
+</script>
 </html>
