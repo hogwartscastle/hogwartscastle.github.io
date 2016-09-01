@@ -33,6 +33,6 @@
 }
 
 .title {
-    alignment: center;
+    text-align: center;
     color: lime;
 }
