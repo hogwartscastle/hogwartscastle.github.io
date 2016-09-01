@@ -1,36 +1,11 @@
 <html>
 <head>
     <title>Hogwarts castle</title>
-    <script src="https://code.jquery.com/jquery-3.1.0.js" integrity="sha256-slogkvB1K3VOkzAI8QITxV3VzpOnkeNVsKvtkYLMjfk=" crossorigin="anonymous"></script>
-    <script src="js/cookie.js"></script>
-    <script src="js/lib.js"></script>
-    <style>
-        .bg {
-            position: relative;
-        }
-
-        .bg:before {
-            content: "";
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            z-index: -1;
-            background-image: url('http://i66.servimg.com/u/f66/15/06/53/48/da00110.jpg');
-            opacity: 0.5;
-        }
-
-        .form {
-            position: relative;
-            left: 400px;
-            font-size: 200%;
-        }
-    </style>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
 </head>
 
-<body class="bg">
-<h1 align="center" style="color: lime">Welcome to Hogwarts Castle</h1>
+<body class="bghome">
+<h1 class="title">Welcome to Hogwarts Castle</h1>
 
 <form method="GET" action="sortinghat.html">
 
@@ -52,6 +27,8 @@
 </form>
 
 </body>
+<script src="https://code.jquery.com/jquery-3.1.0.js" integrity="sha256-slogkvB1K3VOkzAI8QITxV3VzpOnkeNVsKvtkYLMjfk=" crossorigin="anonymous"></script>
+<script src="js/lib.js"></script>
 <script type="text/javascript">
     $(document).ready(homePageLoad);
 </script>

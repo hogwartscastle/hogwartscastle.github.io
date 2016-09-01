@@ -1,33 +1,15 @@
 <html>
 <head>
     <title>Hogwarts castle</title>
-    <script src="https://code.jquery.com/jquery-3.1.0.js" integrity="sha256-slogkvB1K3VOkzAI8QITxV3VzpOnkeNVsKvtkYLMjfk=" crossorigin="anonymous"></script>
-    <script src="js/cookie.js"></script>
-    <script src="js/lib.js"></script>
-    <style>
-        .bg {
-            position: relative;
-        }
-
-        .bg:before {
-            content: "";
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            z-index: -1;
-            background-image: url('http://images.amcnetworks.com/bbcamerica.com/wp-content/uploads/2014/12/sortinghat-1600x720.jpg');
-            opacity: 0.5;
-        }
-
-    </style>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
 </head>
 
-<body class="bg">
-<h1 align="center" style="color: lime">The sorting hat</h1>
+<body class="bgsorting">
+<h1 class="title">The sorting hat</h1>
 <p id="greeting"></p>
 </body>
+<script src="https://code.jquery.com/jquery-3.1.0.js" integrity="sha256-slogkvB1K3VOkzAI8QITxV3VzpOnkeNVsKvtkYLMjfk=" crossorigin="anonymous"></script>
+<script src="js/lib.js"></script>
 <script type="text/javascript">
     $(document).ready(sortingHatLoad);
 </script>

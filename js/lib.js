@@ -1,15 +1,13 @@
 function homePageLoad() {
     $('#submit')
         .click(function () {
-            $.cookie("name", "" + $('#name')
-                    .val());
-            $.cookie("password", "" + $('#password')
-                    .val());
+            localStorage.setItem("name", $('#name').val());
+            localStorage.setItem("password", $('#password').val());
             window.location = "sortinghat.html";
         });
 }
 
 function sortingHatLoad() {
     $('#greeting')
-        .append("hello " + $.cookie("name", {path: "index.html"}));
+        .append("hello " + localStorage.getItem("name"));
 }
